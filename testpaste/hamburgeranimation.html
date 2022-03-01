@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .nav-icon {
+            margin: 12em;
+            width: 60px;
+        }
+
+        .nav-icon::after,
+        .nav-icon::before,
+        .nav-icon div {
+            background-color: rgb(255, 255, 255);
+            border-radius: px;
+            content: '';
+            display: block;
+            height: 5px;
+            margin: 7px 0;
+            transition: all .2s ease-in-out;
+        }
+
+        .nav-icon:hover::before{
+            transform: translateX(12px);
+            rotate: (135deg);
+        }
+
+        .nav-icon:hover::after {
+            transform: translateY(-10px);
+            rotate: (-135deg);
+        }
+
+        .nav-icon:hover div{
+            transform: scale(0);
+        }
+    </style>
+</head>
+<div class="nav-icon">
+    <div></div>
+
+</div>
+<body>
+
+</body>
+</html>

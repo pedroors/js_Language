@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            background-color: #ffffff
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container__image {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-image: url(https://images.unsplash.com/photo-1455218873509-8097305ee378?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);
+            background-size: cover;
+            transition: ease-in-out .3s;
+            z-index: 2;
+        }
+
+        .container__image .container__info {
+            position: relative;
+            line-height: 1.8;
+            transition: ease-in-out .3s;
+            opacity: 0;
+        }
+
+        .container__image .container__location {
+            transition-delay: .15s;
+        }
+        
+        .container__image:hover {
+            border-radius: 0;
+            width: 450px;
+            height: 310px;
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+
+        }
+        .container__image:hover .container__info {
+            transform: translate3d(-60%, 0px, 0px);
+            opacity: 1;
+        }
+        .link {
+            border-bottom: 1px solid transparent;
+            color: #5f6d59;
+            text-decoration: none;
+            transition: ease-in .13s;
+        }
+        .link:hover {
+            background-color: #5f6d59;
+            color: #ffffff
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="container__image">
+
+        <div class="container__info container__author"> Photo by
+            <a class="link" href="#" target="blank"> Thomas Kelley </a>
+        </div>
+        <div class="container__info container__location"> Waterfall in Telluride </div>
+
+    </div>
+</div>
+
+        </body>
+        
+        </html>

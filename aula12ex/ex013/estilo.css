@@ -1,0 +1,29 @@
+body {
+    background: rgb(107, 165, 241);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px; /*Para deixar a borda arrendondada*/
+    padding: 15px; /*Espaço da borda*/
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.315);
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

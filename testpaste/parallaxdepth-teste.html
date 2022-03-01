@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "Poppins";
+        }
+    
+        .container{
+            padding: 40px 80px;
+            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+    
+        .card--wrap{
+            margin: 10px;
+            -webkit-transform: perspective(800px);
+            transform: perspective(800px);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<div class="card-info">
+    <h2 class="card--title">Maldives</h2>
+    <p>Maldives, officialy the Republic of..</p>
+</div>
+
+<div class="container">
+    <div class="card--wrap" onclick="location.href=location">
+    <div class="card">
+        <div class="card--bg" style="background-image: url(https://destinoviagens.com.br/wp-content/uploads/2020/11/finolhu-maldivas-2000x1200.jpg);"></div>
+</div>     
+</div>
+</div>
+<body>
+
+<script>
+const wrapper = document.querySelectorAll(".card--wrap");
+
+wrapper.forEach((element) => {
+let state = {
+mouseX: 0,
+mouseY: 0,
+height:element.clientHeight,
+width: element.clientWidth,
+    </script>
+</body>
+</html>
